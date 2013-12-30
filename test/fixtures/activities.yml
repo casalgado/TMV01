@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  ac_date: 2013-12-30
+  start_time: 1
+  end_time: 1
+  comentario: MyString
+  user_id: 1
+
+two:
+  category: MyString
+  ac_date: 2013-12-30
+  start_time: 1
+  end_time: 1
+  comentario: MyString
+  user_id: 1
