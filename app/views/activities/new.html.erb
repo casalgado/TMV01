@@ -7,14 +7,11 @@
 			<%= f.label :category %>
 			<%= f.text_field :category %>
 
-			<%= f.label :ac_date %>
-			<%= f.date_field :ac_date %>
-
 			<%= f.label :start_time %>
-			<%= f.text_field :start_time %>
+			<%= f.datetime_select :start_time, {ampm: true, minute_step: 15} %>
 
 			<%= f.label :end_time %>
-			<%= f.text_field :end_time %>
+			<%= f.datetime_select :end_time, {ampm: true, minute_step: 15}  %>
 
 			<%= f.label :comentario %>
 			<%= f.text_area :comentario %>

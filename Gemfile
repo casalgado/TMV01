@@ -7,6 +7,7 @@ gem 'rails', '4.0.2'
 # Agregadas por mi
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'devise'
 
 
 # Use sqlite3 as the database for Active Record
@@ -48,4 +49,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

@@ -1,13 +1,19 @@
 class ActivitiesController < ApplicationController
   
+  before_filter :authenticate_user!
+  
   def new
-    @activity = Activity.new
+    last_activity = current_user.activities.last || Activity.new
+    @activity = Activity.new(start_time: last_activity.end_time)
   end
 
   def create
     @activity = current_user.activities.build(activity_params)
-    @activity.save
-    redirect_to activities_new_path
+    if @activity.save
+      redirect_to new_activity_path
+    else
+      render :new
+    end
   end
 
   def show
